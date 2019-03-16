@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFrame">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgVwFrm"
+            android:layout_width="match_parent"
+            android:layout_height="263dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txtVwFrm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:text="Android"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edtTxtFrm"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_x="0dp"
+            android:layout_y="329dp"
+            android:ems="10"
+            android:hint="Please Key In 'Camera' "
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnFrm"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_x="0dp"
+            android:layout_y="403dp"
+            android:text="Click to Change Image and Name"
+            android:onClick="fnChangeFrame"/>
+    </AbsoluteLayout>
+
+</android.widget.FrameLayout>

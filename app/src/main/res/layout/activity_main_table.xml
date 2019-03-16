@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:addStatesFromChildren="false"
+    tools:context=".MainActivityTable">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="427dp"
+            android:layout_height="131dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtViewTab"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="This is Table Layout"
+            android:textSize="24sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edtTxtTab"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:ems="10"
+            android:hint="Write Somthing to Change TextView"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnTab"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="Click to Change TextView"
+            android:onClick="fnChangeTxtView"/>
+    </TableRow>
+</android.widget.TableLayout>

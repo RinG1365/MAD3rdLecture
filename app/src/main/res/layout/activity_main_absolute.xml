@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityAbsolute">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_x="0dp"
+        android:layout_y="87dp"
+        app:srcCompat="@android:color/holo_orange_light"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <TextView
+        android:id="@+id/txtVwAbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="145dp"
+        android:background="@android:color/background_light"
+        android:text="This is Absolute Layout"
+        android:textSize="30sp"
+        android:textStyle="normal|bold|italic"
+        android:typeface="serif"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <Button
+        android:id="@+id/btnAbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="158dp"
+        android:layout_y="326dp"
+        android:onClick="fnChangeAbs"
+        android:text="Change"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <EditText
+        android:id="@+id/edtTxtAbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="265dp"
+        android:ems="10"
+        android:hint="Write Something"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="285dp" />
+</android.widget.AbsoluteLayout>
